@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.problemsolver">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProblemSolver">
+        <activity android:name=".activity.FarmerActivityScreen"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.PuzzleActivityScreen"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.FWGCActivity"
+            android:parentActivityName=".activity.FarmerActivityScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.FarmerActivityScreen" />
+        </activity>
+        <activity android:name=".activity.EightActivity"
+            android:parentActivityName=".activity.PuzzleActivityScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PuzzleActivityScreen" />
+        </activity>
+        <activity android:name=".activity.BigActivityIntroScreen"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.BigActivityScreen"
+            android:parentActivityName=".activity.BigActivityIntroScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.BigActivityIntroScreen" />
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

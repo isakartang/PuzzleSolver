@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700">
+
+    <LinearLayout
+        android:id="@+id/Psolvingbuttons"
+        android:layout_width="154dp"
+        android:layout_height="223dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pmessage">
+
+        <Button
+            android:id="@+id/Breset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/Bsolve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/solve" />
+
+        <Button
+            android:id="@+id/Bnext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next" />
+
+        <TextView
+            android:id="@+id/Benchmarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/benchmarks"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Pmessage"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/Pmessage"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalState" />
+
+    <TextView
+        android:id="@+id/PcurState"
+        style="@style/MediumMono"
+        android:layout_width="150dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/puzzleCurrent"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/goalState"
+        style="@style/MediumMono"
+        android:layout_width="150dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/puzzleFinal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pstate"
+        android:layout_width="135dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/cState"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Pmoves"
+        android:layout_width="50dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="136dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/moves"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pmoves"
+        android:layout_width="28dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/movecount"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pmoves" />
+
+    <TextView
+        android:id="@+id/fstate"
+        android:layout_width="118dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/goalState"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/puzzle_moves"
+        android:layout_width="140dp"
+        android:layout_height="394dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="66dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Psolvingbuttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PcurState"
+        app:layout_constraintVertical_bias="0.345"></LinearLayout>
+
+    <TextView
+        android:id="@+id/pstats"
+        android:layout_width="182dp"
+        android:layout_height="156dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/statistics"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/puzzle_moves"
+        app:layout_constraintTop_toBottomOf="@+id/Psolvingbuttons" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

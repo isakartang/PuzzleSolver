@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="284dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="30dp"
+        android:text="Welcome to the 15-Puzzle Problem!"
+        android:textAlignment="center"
+        android:textColor="@color/dark_white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/MediumMono"
+        android:layout_width="192dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="72dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/BigFinal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="148dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="112dp"
+        android:text="@string/puzzleIntro1"
+        android:textColor="@color/dark_white"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="146dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="7dp"
+        android:text="@string/puzzleIntro2"
+        android:textColor="@color/dark_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="doProblem"
+        android:text="BEGIN 15-PUZZLE PROBLEM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/MediumMono"
+        android:layout_width="192dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/dark_white"
+        android:backgroundTint="@color/white"
+        android:text="@string/BigInit"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

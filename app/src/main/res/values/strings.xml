@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ProblemSolver</string>
+    <string name="farmerIntro1">"A farmer and his wolf, goat, and cabbage come to the edge of a river they wish to cross. "</string>
+    <string name="farmerWelcome">Welcome to the Farmer, Wolf, Goat, Cabbage Problem!</string>
+    <string name="puzzleIntro1">"You are given a board in which numbered tiles can slide around. There is one blank space that holds no tile: "</string>
+    <string name="puzzleWelcome">Welcome to the 8-Puzzle Problem!</string>
+    <string name="farmerBegin">Begin F,W,G,C Problem</string>
+    <string name="puzzleBegin">Begin 8-Puzzle Problem</string>
+    <string name="mainWelcome">Welcome to the Problem Solver!</string>
+    <string name="mainOptions">choose from these problems:</string>
+    <string name="farmerButton">F,W,G,C</string>
+    <string name="puzzleButton">8-PUZZLE</string>
+    <string name="farmerIntro2">There is a boat at the river\'s edge that only the farmer can row. The farmer can take at most one other object besides himself on a crossing, but if the wolf is ever left with the goat, the wolf will eat the goat; similarly, if the goat is left with the cabbage, the goat will eat the cabbage. Devise a sequence of crossings of the river so that all four characters arrive safely on the other side:</string>
+    <string name="puzzleIntro2">A legal move consists of sliding a tile into the blank space if the tile is adjacent to it. The goal is to move tiles around until the board looks like the final state below.</string>
+    <string name="farmerinitial">"   |  |   \n F |  |  \n W |  |  \n G |  |  \n C |  |  \n   |  |   "</string>
+    <string name="farmerFinl">"   |  |   \n   |  | F \n   |  | W \n   |  | G \n   |  | C \n   |  |   "</string>
+    <string name="puzzleInitial">+---+---+---+\n| 2 | 8 | 3 |\n+---+---+---+\n| 1 | 6 | 4 |\n+---+---+---+\n| 7 | O | 5 |\n+---+---+---+</string>
+    <string name="puzzleFinal">+---+---+---+\n| 1 | 2 | 3 |\n+---+---+---+\n| 8 | O | 4 |\n+---+---+---+\n| 7 | 6 | 5 |\n+---+---+---+</string>
+    <string name="goalState">Goal State:</string>
+    <string name="cState">Current State:</string>
+    <string name="Fmessage">\" \"</string>
+    <string name="reset">RESET</string>
+    <string name="solve">SOLVE</string>
+    <string name="next">NEXT</string>
+    <string name="benchmarks">Benchmarks:</string>
+    <string name="moves">Moves:</string>
+    <string name="movecount">0</string>
+    <string name="puzzleCurrent">+---+---+---+\n| 2 | 8 | 3 |\n+---+---+---+\n| 1 | 6 | 4 |\n+---+---+---+\n| 7 | O | 5 |\n+---+---+---+</string>
+    <string name="farmerCurrent">"   |  |   \n F |  |  \n W |  |  \n G |  |  \n C |  |  \n   |  |   "</string>
+    <string name="Pmessage">\" \"</string>
+    <string name="statistics">Statistics:</string>
+    <string name="BigPuzzle">15-Puzzle</string>
+    <string name="BigInit">+---+---+---+---+\n| 5 | 1 | 2 | 3 |\n+---+---+---+---+\n| 6 | O | 7 | 4 |\n+---+---+---+---+\n| 9 |10 |11 | 8 |\n+---+---+---+---+\n|13 |14 |15 |12 |\n+---+---+---+---+</string>
+    <string name="BigCurrent">+---+---+---+---+\n| 5 | 1 | 2 | 3 |\n+---+---+---+---+\n| 6 | O | 7 | 4 |\n+---+---+---+---+\n| 9 |10 |11 | 8 |\n+---+---+---+---+\n|13 |14 |15 |12 |\n+---+---+---+---+</string>
+    <string name="BigFinal">+---+---+---+---+\n| 1 | 2 | 3 | 4 |\n+---+---+---+---+\n| 5 | 6 | 7 | 8 |\n+---+---+---+---+\n| 9 |10 |11 |12 |\n+---+---+---+---+\n|13 |14 |15 | O |\n+---+---+---+---+</string>
+    <string name="Bmessage">\" \"</string>
+</resources>
